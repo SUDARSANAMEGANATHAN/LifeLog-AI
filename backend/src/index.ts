@@ -12,6 +12,9 @@ import {
   searchMemory,
 } from "./services/qdrantService";
 import { ocrImage } from "./services/ocrService";
+import dotenv from "dotenv";
+dotenv.config();
+
 
 // -------- Helper: get userId from request header --------
 function getUserIdFromReq(req: express.Request): string {
