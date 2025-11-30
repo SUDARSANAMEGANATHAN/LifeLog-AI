@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- LifeLog global look ---- */
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+
+  /* your wooden photo-frame background */
+  background-image: url("/lifelog-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Make sure Next.js root fills the screen so flex centering works */
+#__next {
+  min-height: 100vh;
+}
