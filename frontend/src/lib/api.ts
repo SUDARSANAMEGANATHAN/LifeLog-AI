@@ -1,10 +1,13 @@
 // frontend/src/lib/api.ts
+// frontend/src/lib/api.ts
 import axios from "axios";
 
-// ---- Axios instance pointing to your backend ----
 const api = axios.create({
-  baseURL: "http://localhost:4000/api",
+  baseURL:
+    process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:4000/api",
 });
+
+
 
 // ---------- Ingest plain text ----------
 export async function ingestTextApi(text: string) {
